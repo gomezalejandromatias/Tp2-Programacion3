@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tp2Progra3
 {
-    internal class ClaseArticulo
+    internal class Articulo
     {
 
         private string _CodArticulo = "";
@@ -16,11 +16,11 @@ namespace Tp2Progra3
         private int _IDArticulo = 0;
         private int _Stock;
         List<string>Imagen = new List<string>();
-        /////////falta 3 mas
+        /////////falta 3 mas atributos por composicion de clases que voy hacer mas adelante
         ///
-        public ClaseArticulo() { }
+        public Articulo() { }
 
-        public ClaseArticulo (string CodArticulo,string nombre,string descripcion,decimal precio,int idarticulo,int stock, List<string> imagen)
+        public Articulo (string CodArticulo,string nombre,string descripcion,decimal precio,int idarticulo,int stock, List<string> imagen)
         {
              _CodArticulo = CodArticulo;
             _Nombre = nombre;

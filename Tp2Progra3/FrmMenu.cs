@@ -20,8 +20,8 @@ namespace Tp2Progra3
 
            menutoolStripStatusLabel1.Text = DateTime.Now.ToString("HH:mm:ss");
             menutoolStripStatusLabel2.Text = DateTime.Now.ToString("dd/mm/yyyy");
-            
 
+            this.BackColor = Color.Black;
 
         }
 
@@ -30,17 +30,14 @@ namespace Tp2Progra3
             Form1 form1 = new Form1();
             this.Hide();
             form1.ShowDialog();
-           
+
         }
 
-        private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void menutoolStripStatusLabel1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
