@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeArtiuclosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +52,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -66,6 +67,14 @@
             this.menuStrip1.Size = new System.Drawing.Size(1340, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Text = "Usuario:";
             // 
             // menuStrip2
             // 
@@ -183,7 +192,7 @@
             this.hol.BackColor = System.Drawing.Color.Transparent;
             this.hol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hol.ForeColor = System.Drawing.Color.Turquoise;
-            this.hol.Location = new System.Drawing.Point(200, 194);
+            this.hol.Location = new System.Drawing.Point(235, 180);
             this.hol.Name = "hol";
             this.hol.Size = new System.Drawing.Size(806, 25);
             this.hol.TabIndex = 4;
@@ -195,7 +204,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Turquoise;
-            this.label3.Location = new System.Drawing.Point(357, 244);
+            this.label3.Location = new System.Drawing.Point(216, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(432, 24);
             this.label3.TabIndex = 5;
@@ -206,7 +215,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label2.Location = new System.Drawing.Point(426, 301);
+            this.label2.Location = new System.Drawing.Point(399, 438);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 6;
@@ -215,32 +224,31 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Yi Baiti", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label4.Location = new System.Drawing.Point(426, 336);
+            this.label4.Location = new System.Drawing.Point(396, 497);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 11);
+            this.label4.Size = new System.Drawing.Size(81, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Contraseña";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(548, 301);
+            this.textBox1.Location = new System.Drawing.Point(548, 438);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 8;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(548, 333);
+            this.textBox2.Location = new System.Drawing.Point(548, 488);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 9;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(714, 315);
+            this.button1.Location = new System.Drawing.Point(740, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -249,26 +257,30 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(850, 245);
+            this.button2.Location = new System.Drawing.Point(727, 315);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 23);
             this.button2.TabIndex = 11;
             this.button2.Text = "Crear usuario y contraseña";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // toolStripTextBox1
+            // button3
             // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox1.Text = "Usuario:";
+            this.button3.ForeColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(1170, 111);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 23);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Cerrar sesion";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1340, 572);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -322,5 +334,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -38,6 +38,11 @@ namespace Tp2Progra3
 
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmUsuario frmUsuario = new FrmUsuario();
+            this.Hide();
+            frmUsuario.ShowDialog();
+        }
     }
 }
